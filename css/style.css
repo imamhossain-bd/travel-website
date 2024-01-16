@@ -296,13 +296,14 @@
     grid-column: 1/span 5;
     grid-row: 3/span 2;
 }
+
 .grid_item7 {
     grid-column: 6/span 7;
     grid-row: 3/span 1;
 }
 
 
-.destination_img h3{
+.destination_img h3 {
     color: #FFF;
     font-size: 30px;
     font-weight: 700;
@@ -381,7 +382,7 @@
 }
 
 .discount_img1 {
-    background: url('../Images/Group\ 39.png');
+    background: url('../images/Group\ 39.png');
     object-fit: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -391,7 +392,7 @@
 }
 
 .discount_img2 {
-    background: url('../Images/Group\ 40.png');
+    background: url('../images/Group\ 40.png');
     object-fit: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -401,7 +402,7 @@
 }
 
 .discount_img3 {
-    background: url('../Images/Group\ 39.png');
+    background: url('../images/Group\ 39.png');
     object-fit: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -574,12 +575,14 @@
     background: rgba(19, 19, 24, 0.05);
     border: none;
 }
-.news_letter_box .subscribe{
+
+.news_letter_box .subscribe {
     background-color: #FF5400;
     color: #FFF;
     cursor: pointer;
 }
-.save_up{
+
+.save_up {
     width: 325px;
     height: 120px;
     margin: 15pc 21pc;
@@ -587,7 +590,8 @@
     border-radius: 16px;
     transform: rotate(-19.628deg);
 }
-.travel_com{
+
+.travel_com {
     font-size: 16px;
     font-weight: 400;
     color: #FFF;
@@ -595,27 +599,31 @@
     padding-top: 40px;
     margin-bottom: 5px;
 }
-.discount_up{
+
+.discount_up {
     font-size: 20px;
     font-weight: 800;
     text-align: center;
     color: #FFF;
 }
+
 /* main section style end */
 
 /* footer style */
-.footer{
+.footer {
     width: 100%;
     height: 500px;
     background: rgba(19, 19, 24, 0.05);
 }
-.footer_logo{
+
+.footer_logo {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 100px;
     padding-bottom: 20px;
 }
+
 .socila_link {
     margin-top: 30px;
     display: inline-flex;
@@ -624,12 +632,14 @@
     font-size: 25px;
     margin-bottom: 90px;
 }
-.copy_rigth{
+
+.copy_rigth {
     font-size: 16px;
     color: #424247;
     text-align: center;
     margin: 65px;
 }
+
 /* footer style end */
 
 
@@ -655,18 +665,41 @@
 
 /* responsive media queries  */
 @media screen and (max-width: 600px) {
-    .nav_bar {
+
+    .nav_bar,
+    .destination,
+    .form,
+    .destination_search {
         flex-direction: column;
     }
-    .nav_bar li{
+
+    .destination_search {
+        width: 287px;
+        height: 00px;
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .where_go {
+        width: 255px;
+        height: 52px;
+    }
+
+    .nav_bar li {
         margin-top: 10px;
     }
-    .banner{
-        width: 100%;
-        margin: 0px 100px;
+
+    .banner {
+        width: 550px;
+        margin: 45px 25px;
     }
-    .nav_bar
-    .logo_title,
+
+    .travel_title {
+        font-size: 40px;
+        padding-top: 28px;
+    }
+
+    .nav_bar .logo_title,
     .logo {
         font-size: 20px;
     }
