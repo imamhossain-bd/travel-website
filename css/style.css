@@ -821,7 +821,7 @@
         width: 560px;
     }
     .news_letter {
-        lex-direction: column;
+        flex-direction: column;
     margin: 70% 27px;
     }
     .news_letter_box{
