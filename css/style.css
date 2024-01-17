@@ -17,13 +17,14 @@
     align-items: center;
     width: 100%;
     height: 100px;
-    padding: 50px 130px;
+    padding: 20px;
+    background-color: #fff; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .logo {
     display: flex;
     align-items: center;
-    margin-left: 5px;
 }
 
 .logo img {
@@ -32,31 +33,42 @@
 
 .logo_title {
     color: #131318;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 800;
+    margin-left: 10px;
 }
 
 .logo_title span {
     color: #FF5400;
 }
 
-.nav_bar>ul {
-    display: flex;
+.menu-icon {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
 }
 
-.nav_bar li {
+#menu-toggle {
+    display: none;
+}
+
+.nav_links {
+    display: flex;
     list-style: none;
 }
 
-.nav_bar li a {
+.nav_links li {
+    margin: 0 15px;
+}
+
+.nav_links a {
     text-decoration: none;
     color: #424247;
     font-size: 18px;
     font-weight: 400;
-    margin: 25px;
 }
 
-.nav_bar li .active {
+.nav_links .active {
     color: #FF5400;
 }
 
@@ -669,63 +681,26 @@
 /* responsive media queries  */
 @media screen and (max-width: 600px) {
 
-    .nav_bar,
-    .destination,
-    .form,
-    .destination_search,
-    .our_popular_tours {
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav_links {
+        display: none;
         flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 70%;
+        text-align: right;
+        background-color: transparent;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+    #menu-toggle:checked + .menu-icon + .nav_links {
+        display: flex;
     }
 
-    .destination_search {
-        width: 287px;
-        height: 290px;
-    }
-
-    .where_go {
-        width: 255px;
-        height: 52px;
-    }
-
-    .destination_search select {
-        width: 255px;
-        height: 52px;
-    }
-
-    .find_now {
-        width: 255px;
-        height: 52px;
-    }
-
-    .nav_bar li {
-        margin-top: 10px;
-    }
-
-    .banner {
-        width: 550px;
-        margin: 45px 25px;
-    }
-
-    .travel_title {
-        font-size: 40px;
-        padding-top: 28px;
-    }
-
-    .nav_bar .logo_title,
-    .logo {
-        font-size: 20px;
-    }
-
-    .our_popular_tours {
-        width: 500px;
-        margin: 20px 55px;
-    }
-    .popular_tours_description{
-        width: 100%;
-    }
-    .popular_tours_img img{
-        margin: 45px 10px;
-    }
 }
 
 
