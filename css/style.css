@@ -777,7 +777,6 @@
     .who_choose_us .choose_cart_3 {
         margin-left: 0;
     }
-
     .popular_tours_img img {
         margin: 20px 20px;
         width: 550px;
@@ -794,7 +793,7 @@
     } */
     .Choose_Your_destinations {
         width: 570px;
-        margin: 90% 10px;
+        margin: 148% 10px;
     }
     .discount_img{
         padding: 0;
@@ -829,8 +828,8 @@
     text-align: center;
     }
     .news_letter_img {
-        margin-top: 20px;
         width: 550px;
+        margin: 10px -23px;
         border-radius: 20px;
     }
     .save_up{
